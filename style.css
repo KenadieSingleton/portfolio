@@ -101,15 +101,9 @@ div.desc {
 
 
 #header {
+    background: #f1f1f1;
     height: auto;
-    display: block;
-    margin: 0;
-    width: 10%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    padding: 20px 10px;
 }
-
   
 
