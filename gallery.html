@@ -1,47 +1,97 @@
+<!DOCTYPE html>
 <html>
 <head>
-<div id="header" style="margin-left:17.01;">
+<style>
+  div.gallery {
+     border: 1px solid #ccc;
+  }
+  div.gallery:hover {
+     border: 1px solid #777;
+  }
+  div.gallery img {
+     width: 100%;
+     height: auto;
+  }
+  div.desc {
+     padding: 15px;
+     text-align: center;
+  }
+  * {
+     box-sizing: border-box;
+  }
+
+  .responsive {
+     padding: 0 6px;
+     float: left;
+     width: 24.99999%;
+  }
+  @media only screen and (max-width: 700px){
+     .responsive {
+         width: 49.99999%;
+         margin: 6px 0;
+     }
+  }
+  @media only screen and (max-width: 500px){
+     .responsive {
+         width: 100%;
+     }
+  }
+  .clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+  }
+</style>
+<div id="header"
     <h1>Kenadie Singleton's Portfolio</h1>
 </div>
-<ul style="position:fixed;">
-  <li><a href="home.html" target="_self">Home</a></li>
-  <li><a href="aboutme.html" target="_self">About Me</a></li>
-  <li><a href="likes and dislikes.html" target="_self">Likes & Dislikes</a></li>
-  <li><a href="Works.html" target="_self">Works</a></li>
-  <li><a class="active" href="gallery.html" target="_self">Gallery</a></li>
-</ul>
-    
-<title>Dio Appreciation Page</title>
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/KenadieSingleton/portfolio/gh-pages/style.css">
-
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body style="text-align:center;">
-<h1>Gallery</h1>
-<div class="gallery">
-  <a target="_blank" href="http://pm1.narvii.com/6132/12ebdda76bad4d298ad4a436a3eb0badb032518d_hq.jpg">
-    <img src="http://pm1.narvii.com/6132/12ebdda76bad4d298ad4a436a3eb0badb032518d_hq.jpg" alt="Bubgoat Profile Picture" width="390" height="300" style="margin-left:200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+<body>
+  <ul>
+    <li><a href="home.html" target="_self">Home</a></li>
+    <li><a href="aboutme.html" target="_self">About Me</a></li>
+    <li><a href="likes and dislikes.html" target="_self">Likes & Dislikes</a></li>
+    <li><a href="Works.html" target="_self">Works</a></li>
+    <li><a class="active" href="gallery.html" target="_self">Gallery</a></li>
+  </ul>
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://pm1.narvii.com/6132/12ebdda76bad4d298ad4a436a3eb0badb032518d_hq.jpg">
+      <img src="http://pm1.narvii.com/6132/12ebdda76bad4d298ad4a436a3eb0badb032518d_hq.jpg" alt="Bubgoat Profile Picture" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="recolored.jpg">
-    <img src="recolored.jpg" alt="Kira Obamicon" width="400" height="400" style="margin-left:200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="recolored.jpg">
+      <img src="recolored.jpg" alt="Kira Obamicon" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="pokepood.png">
-    <img src="pokepood.png" alt="Bubgoat Furfrou Pokemon" width="300" height="400" style="margin-left:200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pokebun.png">
+      <img src="pokebun.png" alt="Bubgoat Lopunny Pokemon" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="pokebun.png">
-    <img src="pokebun.png" alt="Bubgoat Lopunny Pokemon" width="300" height="400" style="margin-left:200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pokepood.png">
+      <img src="pokepood.png" alt="Bubgoat Furfrou Pokemon" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
-
+</html>
