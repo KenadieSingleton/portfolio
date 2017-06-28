@@ -23,7 +23,7 @@ body {
   }
 p {
   border-style: dotted;
- //width: 1000px;
+  width: 1000px;
   border-radius: 50px;
   margin-left: 250px;
 }
