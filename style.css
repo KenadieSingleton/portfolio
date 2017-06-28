@@ -7,26 +7,25 @@ body {
 
 .responsive {
      padding: 0 6px;
-     float: left;
+     float: right;
      width: 24.99999%;
   }
   @media only screen and (max-width: 700px){
      .responsive {
          width: 49.99999%;
          margin: 6px 0;
+
      }
   }
   @media only screen and (max-width: 500px){
      .responsive {
          width: 100%;
+         border-style: dotted;
+         width: 1000px;
+         border-radius: 50px;
+         margin-left: 250px;
      }
   }
-p {
-  border-style: dotted;
-  width: 1000px;
-  border-radius: 50px;
-  margin-left: 250px;
-}
 
 h2{
   color:#009900;
@@ -64,4 +63,5 @@ li a:hover:not(.active) {
     background: #333;
     height: auto;
     padding: 10px 10px;
+
 }
