@@ -16,7 +16,7 @@ body {
          margin: 6px 0;
      }
   }
-  @media only screen and (max-width: 500px){
+  @media only screen and (max-width: 100px){
      .responsive {
          width: 100%;
      }
